@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +17,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js'></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
     <!--CDN links for TweenLite, CSSPlugin, and EasePack-->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
@@ -60,8 +63,12 @@
     </nav>
 
     <div class="jumbotron header parallax">
-        <h1>Hey there!</h1>
-        <h4>Welcome to my site!</h4>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 style="font-family: 'Lato', sans-serif; text-align: center">Hello, my name is
+                    <b>Morris Wong</b>.<br/>I am <span class="testing"></span></h1>
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid projecthead">
@@ -221,6 +228,18 @@ $(window).scroll(function(event){
    }
    lastScrollTop = st;
 });
+</script>
+
+<!-- Typed.js -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        Typed.new(".testing", {
+            strings: ["learning.", "growing.", "accelerating."],
+            typeSpeed: 10,
+            shuffle: true,
+            loop: true
+        });
+    });
 </script>
 
 <!-- Slider Pro -->
